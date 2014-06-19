@@ -1,0 +1,23 @@
+
+development:
+  host: localhost
+  adapter: postgis
+  encoding: unicode
+  database: tum
+  pool: 5
+  username: postgres
+  password: <%= ENV['PSQL_PASSWD'] %>
+
+test:
+  adapter: postgis
+  database: bungy_test
+  pool: 5
+  username: postgres
+
+production:
+  database: hoop_pro
+  adapter: postgis
+  encoding: unicode
+  username: spalatin
+  pool: 5
+  password:
